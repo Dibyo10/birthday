@@ -332,12 +332,12 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 observe-fade">
             {[
-              { image: photo1, text: "I love you My World ❤️" },
-              { image: photo2, text: "I love you My Strength ❤️" },
-              { image: photo3, text: "I love you My Purpose ❤️" },
-              { image: photo4, text: "I love you My Reason to Get Better ❤️‍🩹" },
-              { image: photo5, text: "I love you My Everything ❤️" },
-              { image: photo6, text: "I love you My Forever ❤️" },
+              { image: photo1, text: "Tum duniya ho kisi ki.. ❤️" },
+              { image: photo2, text: "Himmat ho kisi ki.. ❤️" },
+              { image: photo3, text: "Sudharne ki wajah tum banogi kisi ki.. ❤️" },
+              { image: photo4, text: "Tumhe aur hurt nahi karunga yaar 🙃❤️" },
+              { image: photo5, text: "Pakka.. ab bhot hurt hui .. aur nahi.. ❤️" },
+              { image: photo6, text: "Mai..jaisa hu.. bass tumhara hu ..  ❤️" },
             ].map((item, idx) => (
               <Card
                 key={idx}
@@ -392,7 +392,7 @@ const Index = () => {
           </div>
 
           <p className="text-sm text-muted-foreground pt-8 italic">
-            Made with endless love by Dibyo 💕
+            Made with endless love 💕
           </p>
         </div>
       </section>
