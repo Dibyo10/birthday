@@ -210,39 +210,40 @@ const Index = () => {
 
       {/* Video Message Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-background to-muted/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-romantic text-5xl md:text-6xl mb-4 text-primary observe-fade">
-            From Me to You 💌
-          </h2>
-          <p className="text-muted-foreground mb-8 observe-fade">
-            A special message just for you
-          </p>
+  <div className="max-w-4xl mx-auto text-center">
+    <h2 className="font-romantic text-5xl md:text-6xl mb-4 text-primary observe-fade">
+      From Me to You 💌
+    </h2>
+    <p className="text-muted-foreground mb-8 observe-fade">
+      A special message just for you
+    </p>
 
-          <Card className="overflow-hidden observe-fade shadow-romantic">
-            <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-              {VIDEO_URL ? (
-                <video 
-                  className="w-full h-full object-cover" 
-                  controls
-                  src={VIDEO_URL}
-                >
-                  Your browser does not support the video tag.
-                </video>
-              ) : (
-                <div className="text-center p-8">
-                  <Heart className="w-20 h-20 mx-auto mb-4 text-primary/50" />
-                  <p className="text-lg text-muted-foreground">
-                    Video placeholder
-                  </p>
-                  <p className="text-sm text-muted-foreground/70 mt-2">
-                    Add your video URL at the top of Index.tsx (VIDEO_URL constant)
-                  </p>
-                </div>
-              )}
-            </div>
-          </Card>
-        </div>
-      </section>
+    <Card className="overflow-hidden observe-fade shadow-romantic">
+      <div className="w-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center p-4">
+        {VIDEO_URL ? (
+          <video
+            className="w-full max-h-[70vh] rounded-xl"
+            controls
+            src={VIDEO_URL}
+          >
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <div className="text-center p-8">
+            <Heart className="w-20 h-20 mx-auto mb-4 text-primary/50" />
+            <p className="text-lg text-muted-foreground">
+              Video placeholder
+            </p>
+            <p className="text-sm text-muted-foreground/70 mt-2">
+              Add your video URL at the top of Index.tsx (VIDEO_URL constant)
+            </p>
+          </div>
+        )}
+      </div>
+    </Card>
+  </div>
+</section>
+
 
       {/* Love Letter Section */}
      <section className="py-20 px-4 relative">
