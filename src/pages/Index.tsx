@@ -16,7 +16,7 @@ const Index = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
   
   // Replace this with your video URL or path
-  const VIDEO_URL = "https://youtu.be/XIeLGhLWi1w?si=bY6Q66V9S-t27uU8"; // Put your video URL here (e.g., YouTube embed, Vimeo, or local video path)
+  const VIDEO_URL = "/birthdayvid.mp4"; // Put your video URL here (e.g., YouTube embed, Vimeo, or local video path)
 
   useEffect(() => {
     // Intersection Observer for fade-in animations
