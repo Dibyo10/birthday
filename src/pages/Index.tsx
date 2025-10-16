@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Heart, Sparkles, Gift, Volume2, VolumeX } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -13,6 +13,10 @@ import photo6 from "@/assets/photo6.jpg";
 const Index = () => {
   const [confetti, setConfetti] = useState<boolean>(false);
   const [musicPlaying, setMusicPlaying] = useState<boolean>(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+  
+  // Replace this with your video URL or path
+  const VIDEO_URL = ""; // Put your video URL here (e.g., YouTube embed, Vimeo, or local video path)
 
   useEffect(() => {
     // Intersection Observer for fade-in animations
@@ -29,8 +33,34 @@ const Index = () => {
 
     document.querySelectorAll(".observe-fade").forEach((el) => observer.observe(el));
 
+    // Auto-play music on component mount
+    const playMusic = async () => {
+      if (audioRef.current) {
+        try {
+          await audioRef.current.play();
+          setMusicPlaying(true);
+        } catch (error) {
+          // Autoplay blocked by browser, user will need to click the button
+          console.log("Autoplay blocked, user interaction required");
+        }
+      }
+    };
+    
+    playMusic();
+
     return () => observer.disconnect();
   }, []);
+
+  const toggleMusic = () => {
+    if (audioRef.current) {
+      if (musicPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setMusicPlaying(!musicPlaying);
+    }
+  };
 
   const triggerConfetti = () => {
     setConfetti(true);
@@ -44,6 +74,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden relative">
+      {/* Background Music */}
+      <audio ref={audioRef} loop>
+        <source src="/song.mp3" type="audio/mpeg" />
+      </audio>
+
       {/* Floating Hearts Background */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         {[...Array(15)].map((_, i) => (
@@ -83,7 +118,7 @@ const Index = () => {
         variant="outline"
         size="icon"
         className="fixed top-6 right-6 z-50 rounded-full bg-card/80 backdrop-blur-sm"
-        onClick={() => setMusicPlaying(!musicPlaying)}
+        onClick={toggleMusic}
       >
         {musicPlaying ? <Volume2 className="h-4 w-4" /> : <VolumeX className="h-4 w-4" />}
       </Button>
@@ -187,15 +222,25 @@ const Index = () => {
 
           <Card className="overflow-hidden observe-fade shadow-romantic">
             <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-              <div className="text-center p-8">
-                <Heart className="w-20 h-20 mx-auto mb-4 text-primary/50" />
-                <p className="text-lg text-muted-foreground">
-                  Video placeholder
-                </p>
-                <p className="text-sm text-muted-foreground/70 mt-2">
-                  Replace with your video embed code or URL
-                </p>
-              </div>
+              {VIDEO_URL ? (
+                <video 
+                  className="w-full h-full object-cover" 
+                  controls
+                  src={VIDEO_URL}
+                >
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <div className="text-center p-8">
+                  <Heart className="w-20 h-20 mx-auto mb-4 text-primary/50" />
+                  <p className="text-lg text-muted-foreground">
+                    Video placeholder
+                  </p>
+                  <p className="text-sm text-muted-foreground/70 mt-2">
+                    Add your video URL at the top of Index.tsx (VIDEO_URL constant)
+                  </p>
+                </div>
+              )}
             </div>
           </Card>
         </div>
