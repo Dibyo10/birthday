@@ -75,7 +75,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden relative">
       {/* Background Music */}
-      <audio ref={audioRef} loop>
+      <audio ref={audioRef} loop preload="auto">
         <source src="/song.mp3" type="audio/mpeg" />
       </audio>
 
