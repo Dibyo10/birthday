@@ -245,54 +245,76 @@ const Index = () => {
       </section>
 
       {/* Love Letter Section */}
-      <section className="py-20 px-4 relative">
-        <div className="absolute inset-0 bg-gradient-radial from-primary/5 to-transparent" />
-        
-        <div className="max-w-3xl mx-auto relative">
-          <Card className="p-8 md:p-12 glow-effect observe-fade">
-            <div className="absolute top-4 right-4">
-              <Heart className="w-8 h-8 text-primary fill-primary animate-heartBeat" />
-            </div>
+     <section className="py-20 px-4 relative">
+  <div className="absolute inset-0 bg-gradient-radial from-primary/5 to-transparent" />
+  
+  <div className="max-w-3xl mx-auto relative">
+    <Card className="p-8 md:p-12 glow-effect observe-fade">
+      <div className="absolute top-4 right-4">
+        <Heart className="w-8 h-8 text-primary fill-primary animate-heartBeat" />
+      </div>
 
-            <h2 className="font-romantic text-4xl md:text-5xl mb-6 text-primary">
-              Dear Rani Sa,
-            </h2>
+      <h2 className="font-romantic text-4xl md:text-5xl mb-6 text-primary">
+        Dear Rani Sa,
+      </h2>
 
-            <div className="space-y-4 text-foreground/90 leading-relaxed">
-              <p className="text-lg">
-                Every day with you feels like a dream I never want to wake up from. You make life brighter, 
-                warmer, and infinitely more beautiful. Your smile is the first thing I think of in the morning 
-                and the last thing I picture before I sleep.
-              </p>
+      <div className="space-y-4 text-foreground/90 leading-relaxed">
+        <p className="text-lg">
+          Happy Birthday, my love. 💖 Today is your day — the day the world quietly became
+          a little softer, a little brighter, a little more beautiful. You’ve always had that
+          kind of magic — you don’t force joy, you bring it just by being you.
+        </p>
 
-              <p className="text-lg">
-                You've turned ordinary moments into extraordinary memories. From our silly late-night conversations 
-                to our comfortable silences, every second spent with you is a treasure I hold close to my heart.
-              </p>
+        <p className="text-lg">
+          I’ve been thinking a lot lately — about us, about time, about how easy it is to get
+          lost chasing the future and forget to be present with the person who makes life worth
+          chasing in the first place. I know I slipped into that mistake, and I can see now how
+          it made you feel distant and unseen.
+        </p>
 
-              <p className="text-lg">
-                On this special day, I want you to know that you are loved beyond measure. You are my best friend, 
-                my partner in crime, my peace, and my joy. Thank you for being you, for accepting me as I am, 
-                and for making me a better person every single day.
-              </p>
+        <p className="text-lg">
+          I don’t want to rewrite the past — I just want to hold it gently, learn from it, and
+          build something better. Not bigger, not louder — just kinder.
+        </p>
 
-              <p className="text-lg font-medium text-primary">
-                Here's to celebrating you today and forever. I love you more than words can express.
-              </p>
-            </div>
+        <p className="text-lg">
+          Rani Sa, you are still the calm in my overthinking, the peace behind my noise, the one
+          who makes ordinary days feel like something sacred. Even when words are few between us,
+          I still carry you with me — in how I think, how I dream, how I try to grow.
+        </p>
 
-            <div className="mt-8 text-right">
-              <p className="font-romantic text-3xl text-primary">Forever yours,</p>
-              <p className="font-romantic text-3xl text-foreground">Dibyo 💕</p>
-            </div>
+        <p className="text-lg">
+          So today, I want this letter to be a quiet space for you — no apologies you have to
+          answer, no expectations to meet. Just love — simple, steady, and still yours.
+        </p>
 
-            <div className="absolute bottom-4 left-4 flex gap-2">
-              <Sparkles className="w-4 h-4 text-accent animate-sparkle" />
-              <Sparkles className="w-3 h-3 text-primary animate-sparkle" style={{ animationDelay: "0.7s" }} />
-            </div>
-          </Card>
-        </div>
-      </section>
+        <p className="text-lg">
+          Thank you for being you — for every laugh, every small kindness, every piece of your
+          heart you’ve shared with me. I’m learning, slowly but surely, to deserve that kind of love.
+        </p>
+
+        <p className="text-lg font-medium text-primary">
+          Happy Birthday, my Queen. You will always be the most beautiful part of my story — not
+          because of how things were, but because of who you are.
+        </p>
+      </div>
+
+      <div className="mt-8 text-right">
+        <p className="font-romantic text-3xl text-primary">Forever yours,</p>
+        <p className="font-romantic text-3xl text-foreground">Dibyo 💕</p>
+      </div>
+
+      <div className="absolute bottom-4 left-4 flex gap-2">
+        <Sparkles className="w-4 h-4 text-accent animate-sparkle" />
+        <Sparkles
+          className="w-3 h-3 text-primary animate-sparkle"
+          style={{ animationDelay: "0.7s" }}
+        />
+      </div>
+    </Card>
+  </div>
+</section>
+
 
       {/* Why You Deserve the World Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-muted/30 to-background">
