@@ -260,41 +260,41 @@ const Index = () => {
 
       <div className="space-y-4 text-foreground/90 leading-relaxed">
         <p className="text-lg">
-          Happy Birthday, my love. 💖 Today is your day — the day the world quietly became
+          Happy Birthday, my love. 💖 Today is your day.. the day the world quietly became
           a little softer, a little brighter, a little more beautiful. You’ve always had that
-          kind of magic — you don’t force joy, you bring it just by being you.
+          kind of magic.. you don’t force joy, you bring it just by being you.
         </p>
 
         <p className="text-lg">
-          I’ve been thinking a lot lately — about us, about time, about how easy it is to get
+          I’ve been thinking a lot lately..about us, about time, about how easy it is to get
           lost chasing the future and forget to be present with the person who makes life worth
           chasing in the first place. I know I slipped into that mistake, and I can see now how
           it made you feel distant and unseen.
         </p>
 
         <p className="text-lg">
-          I don’t want to rewrite the past — I just want to hold it gently, learn from it, and
-          build something better. Not bigger, not louder — just kinder.
+          I don’t want to rewrite the past.. I just want to hold it gently, learn from it, and
+          build something better. Not bigger, not louder.. just kinder.
         </p>
 
         <p className="text-lg">
           Rani Sa, you are still the calm in my overthinking, the peace behind my noise, the one
           who makes ordinary days feel like something sacred. Even when words are few between us,
-          I still carry you with me — in how I think, how I dream, how I try to grow.
+          I still carry you with me.. in how I think, how I dream, how I try to grow.
         </p>
 
         <p className="text-lg">
-          So today, I want this letter to be a quiet space for you — no apologies you have to
-          answer, no expectations to meet. Just love — simple, steady, and still yours.
+          So today, I want this letter to be a quiet space for you... no apologies you have to
+          answer, no expectations to meet. Just love..simple, steady, and still yours.
         </p>
 
         <p className="text-lg">
-          Thank you for being you — for every laugh, every small kindness, every piece of your
+          Thank you for being you, for every laugh, every small kindness, every piece of your
           heart you’ve shared with me. I’m learning, slowly but surely, to deserve that kind of love.
         </p>
 
         <p className="text-lg font-medium text-primary">
-          Happy Birthday, my Queen. You will always be the most beautiful part of my story — not
+          Happy Birthday, my Queen. You will always be the most beautiful part of my story..not
           because of how things were, but because of who you are.
         </p>
       </div>
