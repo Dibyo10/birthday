@@ -168,7 +168,7 @@ const Index = () => {
       <section className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-romantic text-5xl md:text-6xl text-center mb-4 text-primary observe-fade">
-            Our Memories ✨
+            Tum harr pal saath ho mere.. meri gift ho tum.. ✨
           </h2>
           <p className="text-center text-muted-foreground mb-12 observe-fade">
             Every moment with you is a treasure
@@ -176,12 +176,12 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 observe-fade">
             {[
-              { title: "Our First Date", caption: "Where it all began 💕" },
-              { title: "Your Beautiful Smile", caption: "Your smile = my peace" },
-              { title: "Adventure Together", caption: "Making memories, one trip at a time" },
-              { title: "Cozy Moments", caption: "Home is wherever I'm with you" },
-              { title: "Late Night Talks", caption: "3 AM conversations hit different" },
-              { title: "Us Being Goofy", caption: "You make me laugh like no one else" },
+              { title: "My Hope in Hopelessness", caption: "Tumse hee mera harr effort shuru hota hai 💕" },
+              { title: "My second chance..", caption: "Tum ho, tabhi ajtak koshish krrha hu.." },
+              { title: "Meri future..", caption: "Tumare saath jeena hai ... aakhri saas tak...uske liye jo bann pade karunga" },
+              { title: "Mera ghar..", caption: "pata hai..usi ghar ko kabhi kabhi tod deta hu..parr isse sach nahi badlega ..kabhi bhi" },
+              { title: "My bacchi..", caption: "I know .. I never made you feel like that .. I WILL." },
+              { title: "My .. Everything..", caption: "Some people , inspite knowing someone is their everything , hurt them.. I WONT BE THAT SOMEONE ANYMORE." },
             ].map((memory, idx) => (
               <Card
                 key={idx}
