@@ -204,9 +204,7 @@ const Index = () => {
             ))}
           </div>
 
-          <p className="text-center text-sm text-muted-foreground mt-8 italic observe-fade">
-            💡 Replace these with our actual photos to make it even more special
-          </p>
+          
         </div>
       </section>
 
