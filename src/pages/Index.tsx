@@ -3,6 +3,12 @@ import { Heart, Sparkles, Gift, Volume2, VolumeX } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import heroBackground from "@/assets/hero-background.jpg";
+import photo1 from "@/assets/photo1.jpg";
+import photo2 from "@/assets/photo2.jpg";
+import photo3 from "@/assets/photo3.jpg";
+import photo4 from "@/assets/photo4.jpg";
+import photo5 from "@/assets/photo5.jpg";
+import photo6 from "@/assets/photo6.jpg";
 
 const Index = () => {
   const [confetti, setConfetti] = useState<boolean>(false);
@@ -245,41 +251,53 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Timeline Section */}
+      {/* Why You Deserve the World Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-muted/30 to-background">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-romantic text-5xl md:text-6xl text-center mb-12 text-primary observe-fade">
-            Our Journey 🌸
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-romantic text-5xl md:text-6xl text-center mb-6 text-primary observe-fade">
+            Why You Deserve the World 🌍
           </h2>
+          <p className="text-center text-lg text-foreground/80 mb-4 observe-fade max-w-3xl mx-auto">
+            You deserve everything beautiful this world has to offer, and I promise to keep improving 
+            in every way possible to make that happen for you.
+          </p>
+          <p className="text-center text-muted-foreground mb-12 observe-fade italic">
+            Hover over our photos to see why ✨
+          </p>
 
-          <div className="space-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 observe-fade">
             {[
-              { title: "When We Met", description: "The universe conspired to bring us together", year: "Day 1" },
-              { title: "Our First Date", description: "Butterflies, nervous laughs, and instant connection", year: "The Beginning" },
-              { title: "First Trip Together", description: "Creating memories in new places, hand in hand", year: "Adventure" },
-              { title: "You Said Yes", description: "Making it official, making it forever", year: "Our Promise" },
-              { title: "Forever Loading...", description: "The best is yet to come, my love", year: "∞" },
-            ].map((milestone, idx) => (
-              <div key={idx} className="flex gap-4 md:gap-8 items-start observe-fade group">
-                <div className="flex-shrink-0 w-24 text-right">
-                  <span className="font-romantic text-2xl text-primary group-hover:scale-110 inline-block transition-transform">
-                    {milestone.year}
-                  </span>
+              { image: photo1, text: "I love you My World ❤️" },
+              { image: photo2, text: "I love you My Strength ❤️" },
+              { image: photo3, text: "I love you My Purpose ❤️" },
+              { image: photo4, text: "I love you My Reason to Get Better ❤️‍🩹" },
+              { image: photo5, text: "I love you My Everything ❤️" },
+              { image: photo6, text: "I love you My Forever ❤️" },
+            ].map((item, idx) => (
+              <Card
+                key={idx}
+                className="group relative overflow-hidden aspect-square cursor-pointer transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/30"
+              >
+                <img 
+                  src={item.image} 
+                  alt={`Memory ${idx + 1}`}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                  <p className="font-romantic text-3xl text-background text-center px-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    {item.text}
+                  </p>
                 </div>
-                
-                <div className="relative flex-shrink-0">
-                  <div className="w-4 h-4 rounded-full bg-primary group-hover:scale-150 transition-transform" />
-                  {idx < 4 && (
-                    <div className="absolute left-1/2 -translate-x-1/2 top-4 w-0.5 h-20 bg-gradient-to-b from-primary to-primary/20" />
-                  )}
-                </div>
-
-                <Card className="flex-1 p-6 hover:shadow-romantic transition-all duration-300 group-hover:scale-105">
-                  <h3 className="font-semibold text-xl mb-2 text-foreground">{milestone.title}</h3>
-                  <p className="text-muted-foreground">{milestone.description}</p>
-                </Card>
-              </div>
+              </Card>
             ))}
+          </div>
+
+          <div className="mt-12 text-center observe-fade">
+            <p className="text-lg text-foreground/90 leading-relaxed max-w-3xl mx-auto">
+              Every day, I want to be better for you. Better at loving you, supporting you, making you smile, 
+              and giving you the life you deserve. You inspire me to grow, to be kinder, stronger, and more present. 
+              This is my promise — to keep trying, keep improving, and never stop working to give you the world.
+            </p>
           </div>
         </div>
       </section>
